@@ -1,0 +1,20 @@
+# Build & rendered media
+*.mp4
+*.mov
+assets/
+previews/
+build/
+tmp/
+
+# Compiled binaries
+skills/university-showcase-video/scripts/render_video
+skills/university-showcase-video/scripts/segment_portrait
+*.o
+*.dSYM/
+
+# Python / OS artifacts
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db

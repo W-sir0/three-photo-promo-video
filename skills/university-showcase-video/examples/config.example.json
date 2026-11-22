@@ -1,0 +1,83 @@
+{
+  "university": {
+    "name": "示例大学",
+    "english_name": "Example University"
+  },
+  "person": {
+    "name": "代表人物",
+    "title": "中国科学院院士  ·  学科奠基人"
+  },
+  "motto": {
+    "label": "校 训",
+    "lines": [
+      "校训上联",
+      "校训下联"
+    ]
+  },
+  "disciplines": [
+    {
+      "name": "特色学科一",
+      "raw_icon": "raw/icon_1_raw.png",
+      "icon": "assets/icon_1.png"
+    },
+    {
+      "name": "特色学科二",
+      "raw_icon": "raw/icon_2_raw.png",
+      "icon": "assets/icon_2.png"
+    },
+    {
+      "name": "特色学科三",
+      "raw_icon": "raw/icon_3_raw.png",
+      "icon": "assets/icon_3.png"
+    }
+  ],
+  "raw_inputs": {
+    "emblem": "raw/emblem.jpg",
+    "campus": "raw/campus.jpg",
+    "portrait": "raw/portrait.jpg",
+    "portrait_mask": "assets/portrait_mask.png"
+  },
+  "assets": {
+    "emblem": "assets/emblem_clean.png",
+    "campus": "assets/campus_graded.png",
+    "portrait": "assets/portrait_cutout.png"
+  },
+  "palette": {
+    "hue_deg": 190.0,
+    "emblem_accent": "#396770",
+    "bg_center": "#417580",
+    "bg_mid": "#346069",
+    "bg_outer": "#1E3D43",
+    "bg_bottom": "#142A2E",
+    "scrim_color": "#0C1E22",
+    "ribbon_color": "#0E2226",
+    "shadow_tint": "#22434A",
+    "halo_tint": "#58A0AE",
+    "subtitle_color": "#CADFE3"
+  },
+  "campus_options": {
+    "auto_symmetry_crop": true,
+    "trim_bottom_px": 0,
+    "sky_extend": "auto"
+  },
+  "portrait_options": {
+    "flip_horizontal": false,
+    "restore_vintage": false,
+    "sharpen": true,
+    "edge_taper": true
+  },
+  "layout": {
+    "motto_x": 820,
+    "portrait_x": 236,
+    "portrait_height": 450,
+    "campus_y": 448
+  },
+  "video": {
+    "width": 1332,
+    "height": 720,
+    "fps": 40,
+    "duration": 4.80,
+    "output": "showcase.mp4"
+  },
+  "previews_dir": "previews"
+}

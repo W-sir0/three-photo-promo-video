@@ -1,0 +1,84 @@
+{
+  "university": {
+    "name": "吉林大学",
+    "english_name": "Jilin University"
+  },
+  "person": {
+    "name": "匡亚明",
+    "title": "著名教育家  ·  吉林大学原校长"
+  },
+  "motto": {
+    "label": "校 训",
+    "lines": [
+      "求实创新",
+      "励志图强"
+    ]
+  },
+  "disciplines": [
+    {
+      "name": "化学",
+      "raw_icon": "raw/icon_chemistry_raw.png",
+      "icon": "assets/icon_chemistry.png"
+    },
+    {
+      "name": "车辆工程",
+      "raw_icon": "raw/icon_vehicle_raw.png",
+      "icon": "assets/icon_vehicle.png"
+    },
+    {
+      "name": "考古学",
+      "raw_icon": "raw/icon_archaeology_raw.png",
+      "icon": "assets/icon_archaeology.png"
+    }
+  ],
+  "raw_inputs": {
+    "emblem": "raw/emblem.jpg",
+    "campus": "raw/campus.jpg",
+    "portrait": "raw/portrait.jpg",
+    "portrait_mask": "assets/portrait_mask.png"
+  },
+  "assets": {
+    "emblem": "assets/emblem_clean.png",
+    "campus": "assets/campus_graded.png",
+    "portrait": "assets/portrait_cutout.png"
+  },
+  "palette": {
+    "hue_deg": 225.1,
+    "emblem_accent": "#0936BE",
+    "bg_center": "#1845AF",
+    "bg_mid": "#113288",
+    "bg_outer": "#091E58",
+    "bg_bottom": "#06133A",
+    "scrim_color": "#050F2B",
+    "ribbon_color": "#05102F",
+    "shadow_tint": "#0C215E",
+    "halo_tint": "#577EE0",
+    "subtitle_color": "#CAD6ED"
+  },
+  "campus_options": {
+    "auto_symmetry_crop": true,
+    "trim_bottom_px": 28,
+    "sky_extend": "auto"
+  },
+  "portrait_options": {
+    "crop_box": [0, 20, 800, 1055],
+    "flip_horizontal": true,
+    "restore_vintage": false,
+    "sharpen": true,
+    "edge_taper": true
+  },
+  "layout": {
+    "motto_x": 835,
+    "portrait_x": 236,
+    "portrait_height": 455,
+    "campus_y": 444
+  },
+  "video": {
+    "width": 1332,
+    "height": 720,
+    "fps": 40,
+    "duration": 4.80,
+    "output": "吉林大学_精修版.mp4"
+  },
+  "previews_dir": "previews"
+}
