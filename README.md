@@ -8,19 +8,19 @@ Turn a logo, a scene photo, and a featured image into a short promo video for a 
 
 | 学校 | 精修版成片 |
 | --- | --- |
-| 吉林农业大学 · Jilin Agricultural University | [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/jilin-agricultural-university.mp4) |
-| 吉林大学 · Jilin University | [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/jilin-university.mp4) |
-| 北京大学 · Peking University | [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/peking-university.mp4) |
-| 清华大学 · Tsinghua University | [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/tsinghua-university.mp4) |
+| 吉林农业大学 · Jilin Agricultural University | [下载 MP4](https://github.com/W-sir0/three-photo-promo-video/releases/download/demo-videos/jilin-agricultural-university.mp4) |
+| 吉林大学 · Jilin University | [下载 MP4](https://github.com/W-sir0/three-photo-promo-video/releases/download/demo-videos/jilin-university.mp4) |
+| 北京大学 · Peking University | [下载 MP4](https://github.com/W-sir0/three-photo-promo-video/releases/download/demo-videos/peking-university.mp4) |
+| 清华大学 · Tsinghua University | [下载 MP4](https://github.com/W-sir0/three-photo-promo-video/releases/download/demo-videos/tsinghua-university.mp4) |
 
-[查看示例 Release](https://github.com/W-sir0/university-showcase-skill/releases/tag/demo-videos)
+[查看示例 Release](https://github.com/W-sir0/three-photo-promo-video/releases/tag/demo-videos)
 
 ## 安装与上手 / Quick start
 
 在你准备用来制作视频的项目目录运行。
 
 ```bash
-npx skills add W-sir0/university-showcase-skill
+npx skills add W-sir0/three-photo-promo-video
 ```
 
 安装时选择你的 Agent，例如 Antigravity、Claude Code、Codex 或 Cursor。也可以手动复制 [`university-showcase-video` 技能目录](./skills/university-showcase-video)到所用 Agent 的项目技能目录，例如 `.agents/skills/`。
