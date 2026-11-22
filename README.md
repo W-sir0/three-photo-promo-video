@@ -1,15 +1,17 @@
-# University Showcase Video Skill
+# 三图宣传短片 / Three-Photo Promo Video
 
-**用三张照片制作高校展示动画。** 上传校徽、校园地标和代表人物照片，Agent 会提取校徽配色，让校徽开场、金色三角展开校园画面，再依次呈现中英文校名、人物、校训和三个学科图标。默认导出 **1332 × 720、40 fps、4.8 秒的无声 MP4**，可用于高校介绍、校园活动片头和院系展示。
+**用三张图制作一段宣传短片。** 准备标识图、场景图和一张主角图，Agent 会从标识提取配色，先展示标识，再用金色三角展开场景，依次呈现名称、主角、宣传语和三个亮点图标。可用于品牌、产品、活动、景区、团队和高校介绍。默认导出 **1332 × 720、40 fps、4.8 秒的无声 MP4**。
 
-Turn three photos of a university emblem, campus landmark, and representative figure into a short, emblem-first showcase animation. The skill includes local Swift and FFmpeg renderers.
+Turn a logo, a scene photo, and a featured image into a short promo video for a brand, product, event, place, or university. The Agent Skill includes local Swift and FFmpeg renderers.
 
-## 成片示例 / Demo videos
+## 高校成片示例 / University demos
 
 | 学校 | 精修版成片 |
 | --- | --- |
 | 吉林农业大学 · Jilin Agricultural University | [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/jilin-agricultural-university.mp4) |
 | 吉林大学 · Jilin University | [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/jilin-university.mp4) |
+| 北京大学 · Peking University | [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/peking-university.mp4) |
+| 清华大学 · Tsinghua University | [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/tsinghua-university.mp4) |
 
 [查看示例 Release](https://github.com/W-sir0/university-showcase-skill/releases/tag/demo-videos)
 
@@ -23,11 +25,19 @@ npx skills add W-sir0/university-showcase-skill
 
 安装时选择你的 Agent，例如 Antigravity、Claude Code、Codex 或 Cursor。也可以手动复制 [`university-showcase-video` 技能目录](./skills/university-showcase-video)到所用 Agent 的项目技能目录，例如 `.agents/skills/`。
 
-打开工作区，把校徽、校园地标、代表人物照片发给 Agent，并附上学校和人物姓名。可以直接复制这段提示词。
+打开工作区，把标识图、场景图和主角图发给 Agent，并附上宣传对象的名称。可以直接复制这段提示词。
 
-> 用 `university-showcase-video` 为【学校名称】制作高校展示动画。三张附件依次是校徽、校园地标和【人物姓名】。请核对中英文校名、校训、人物头衔和三个特色学科，先给我确认文案和配色。确认后再制作，交付 MP4 和关键帧预览。
+> 用 `university-showcase-video` 的版式为【品牌、产品、活动或学校的名称】制作宣传短片。三张附件依次是标识、场景和主角。请先给我确认名称、宣传语、三个亮点和配色，再制作 MP4 和关键帧预览。
 
-Agent 会先提取校徽色系并整理文案。你可以在渲染前核对文案、人物抠图和图标，成片后再用关键帧检查校徽开场、校园画面展开和完整画面。
+### 换一个题材 / Adapt the template
+
+| 准备的图片 | 高校示例 | 产品示例 | 活动示例 |
+| --- | --- | --- | --- |
+| 标识图 | 校徽 | 品牌 Logo | 活动标志 |
+| 场景图 | 校园地标 | 产品使用场景 | 活动场地 |
+| 主角图 | 代表人物 | 产品主体 | 主讲人或主展品 |
+
+现成的 `config.json` 模板沿用高校版字段名。换题材时，把宣传对象的名称填入 `university`，主角的名称与副标题填入 `person`，宣传语填入 `motto.lines`，并用 `motto.label` 自定义字幕栏名称。用 `disciplines` 填写亮点和图标。产品或展品可以用抠好背景的透明 PNG，填到 `assets.portrait` 后交给渲染器。高校题材可按技能原流程核对校名、校训和特色学科。
 
 ## Agent 和模型要求 / Agent requirements
 
@@ -36,8 +46,8 @@ Agent 会先提取校徽色系并整理文案。你可以在渲染前核对文�
 | 你有的能力或素材 | 可以怎么用 |
 | --- | --- |
 | Agent 可以看图、联网搜索和调用生图工具 | 提供三张照片，让 Agent 核对资料、制作三个统一风格的学科图标并检查预览。 |
-| 使用纯文本或代码模型 | 标明三张照片的用途，提供学校资料和三个学科图标文件。让 Agent 写配置、处理素材和渲染，由你查看预览。 |
-| 没有联网搜索或生图工具 | 分别提供已核对的学校资料或自备图标。macOS 可用 Vision 生成肖像遮罩，也可准备现成的遮罩。 |
+| 使用纯文本或代码模型 | 标明三张图的用途，提供名称、宣传语和三个亮点图标。让 Agent 写配置、处理素材和渲染，由你查看预览。 |
+| 没有联网搜索或生图工具 | 分别提供已核对的文案或自备图标。macOS 可用 Vision 生成肖像遮罩，也可准备现成的遮罩。 |
 
 ## 本地依赖 / Requirements
 
@@ -52,7 +62,7 @@ python3 -m pip install pillow numpy
 
 ## 配置与手动渲染 / Configuration and CLI
 
-从[通用配置模板](./skills/university-showcase-video/examples/config.example.json)开始，也可参考[吉林大学配置](./skills/university-showcase-video/examples/jlu.example.json)。在仓库根目录初始化配置，填写学校资料，并放入照片及学科图标。配置里的相对路径以 `config.json` 所在的目录为准。
+从[通用配置模板](./skills/university-showcase-video/examples/config.example.json)开始，也可参考[吉林大学配置](./skills/university-showcase-video/examples/jlu.example.json)。在仓库根目录初始化配置，填写宣传对象资料，并放入图片和亮点图标。配置里的相对路径以 `config.json` 所在的目录为准。
 
 <details>
 <summary>查看 macOS / Linux 命令示例</summary>
