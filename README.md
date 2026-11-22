@@ -6,6 +6,17 @@
 
 ---
 
+## 成片示例 / Demo Videos
+
+两段精修版 MP4 展示了从校徽开场到校园主视觉展开的效果。
+
+- 吉林农业大学 · [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/jilin-agricultural-university.mp4)
+- 吉林大学 · [下载 MP4](https://github.com/W-sir0/university-showcase-skill/releases/download/demo-videos/jilin-university.mp4)
+
+[查看 Release 和全部附件](https://github.com/W-sir0/university-showcase-skill/releases/tag/demo-videos)
+
+---
+
 ## 核心特性 / Features
 
 - **极简 3 图输入**：仅需提供校徽、校园实景照、代表人物照片各 1 张。
@@ -54,7 +65,7 @@ university-showcase-skill/
 ### 方式一：使用 `npx skills`（支持 Antigravity / Claude Code / Codex / Cursor）
 
 ```bash
-npx skills add <your-github-username>/university-showcase-skill
+npx skills add W-sir0/university-showcase-skill
 ```
 
 ### 方式二：手动克隆到 Agent Skill 目录
@@ -62,7 +73,7 @@ npx skills add <your-github-username>/university-showcase-skill
 **Google Antigravity（当前项目或全局）**
 ```bash
 # 仅当前项目生效：
-git clone https://github.com/<your-github-username>/university-showcase-skill.git /tmp/uss
+git clone https://github.com/W-sir0/university-showcase-skill.git /tmp/uss
 cp -R /tmp/uss/skills/university-showcase-video .agents/skills/
 
 # 或全局安装（所有工作区可用）：
